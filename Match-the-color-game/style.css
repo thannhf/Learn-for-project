@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ffff;
+    border-radius: 15px;
+    box-shadow: rgba(0,0,0,0.4) 0 5px 15px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.landing-container{
+    text-align: center;
+}
+.landing-container p{
+    margin-bottom:20px;
+}
+.game-container{
+    display:none;
+    flex-direction: column;
+    align-items: center;
+}
+.display-color{
+    display:flex;
+    gap: 10px;
+}
+.random-color, .guess-color{
+    width: 100px;
+    height: 100px;
+    margin-bottom:20px;
+}
+.guess-color{
+    background-color:#000;
+}
+.guess-result{
+    display:flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.guess-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.guess-input input{
+    margin:5px 0;
+}
+.guess-input span{
+    display: block;
+    margin-bottom:10px;
+}
+button{
+    padding:10px 40px;
+    background-color:#ff9a9e;
+    border:none;
+    border-radius: 5px;
+    color:#fff;
+    cursor:pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: #ff7a7a;
+}
+.result-percentage{
+    font-size:1.5em;
+    margin-top: 20px;
+}
+.result-colors{
+    display:flex;
+    gap: 10px;
+}
