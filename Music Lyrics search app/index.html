@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music lyric searcher app</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Music lyric searcher app</h1>
+
+        <form id="form">
+            <input autofocus id="search" type="text" placeholder="enter the name of the artist or song..."/>
+            <button>Search</button>
+        </form>
+    </header>
+
+    <ul id="songs-container" class="songs-container"></ul>
+    <div id="prev-and-next-container" class="prev-and-next-container"></div>
+
+    <script src="./js/fetchApi.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
