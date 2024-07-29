@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- character set -->
+  <meta charset="utf-8">
+  <!-- title -->
+  <title>Horoscope</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Gugi" rel="stylesheet">
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- HOVER ANIMATIONS -->
+  <link rel="stylesheet" href="css/hover-min.css">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="bg-dark">
+
+
+  <header class="bg-dark container-fluid text-light">
+    <h1 id="mainHeader" class="text-center">Horoscope</h1>
+  </header>
+
+  <!-- ROW & MAIN CONTAINER -->
+  <div class="container-fluid mainContainer pt-5 pb-5 bg-primary">
+    <div class="row">
+
+      <!-- FIRST COLUMN -->
+      <div class="col-md-4">
+        <img id="left-picture" class="img-fluid animated rubberBand mb-5 mt-5" src="img/zodiac-signs-left.png" alt="Zodiac-Signs">
+      </div>
+
+      <!-- SECOND COLUMN -->
+      <div class="secondColumn col-4 bg-light border border-dark hvr-bob">
+        <h3 class="text-center CrimsonText mt-2 vertical-align">Enter Your Zodiac Sign</h3>
+
+        <!-- BUTTON & INPUT GETTING USERINPUT ON CLICK -->
+        <input id="userInput" class="form-control mx-auto text-center vertical-align">
+
+        <button type="button" onclick="getHoro()" class="btn btn-primary btn-lg mx-auto text-center mt-2 border-light letterSpacing fontSize CrimsonText d-block mb-2 vertical-align hvr-shadow-radial">Click to Submit</button>
+      </div>
+      <!-- END SECOND COLUMN -->
+
+
+      <!-- THIRD COLUMN -->
+      <div class="col-md-4">
+        <img id="right-picture" class="img-fluid animated rubberBand mt-5 mb-5" src="img/zodiac-signs-right.png" alt="Zodiac-Signs">
+      </div>
+
+
+
+
+      <div class="col-md-6">
+        <!-- JAVASCRIPT DOM ELEMENTS -->
+        <!-- wrapped this div around to center new content when it appears -->
+        <div id="emptyWrapper" class=" mx-auto text-center w-100">
+          <!-- TITLE & INFO APPEAR ON CLICK -->
+          <h1 id="title" class=""></h1>
+          <h4 id="info" class=""></h4>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- IMAGE APPEARS ON CLICK -->
+        <img id="img" class="">
+      </div>
+
+
+
+
+  </div>
+  <!-- END ROW -->
+
+
+  </div>
+  <!-- END CONTAINER -->
+
+  <!-- Main external JS -->
+  <script src="js/scripts.js"></script>
+  <!-- BOOTSTRAP jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP Popper  CDN-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

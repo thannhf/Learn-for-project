@@ -1,0 +1,122 @@
+/* AUTOPREFIXER */
+/* https://autoprefixer.github.io/ */
+
+* {
+  /* font-family: 'Gugi', cursive;*/
+  /* font-family: 'Black Han Sans', sans-serif; */
+  /* font-family: 'Do Hyeon', sans-serif; */
+  /* font-family: 'Cantata One', serif; */
+  font-family: 'Crimson Text', serif;
+}
+
+
+#info {
+
+  height: 200px;
+  overflow: auto;
+  padding: 2px;
+}
+
+.CarbettaCoding {
+  max-width: 40vh;
+  max-height: 25vh;
+
+}
+
+footer {
+  padding: none;
+}
+
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:50vh
+}
+
+.vertical-align {
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+.min-height400 {
+  min-height: 400px;
+}
+
+.min-width400 {
+  min-width: 400px;
+}
+
+.secondColumn {
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:70vh;
+}
+
+.maxHeightImage {
+  max-height: 400px;
+}
+
+.maxWidth {
+  max-width: 400px;
+}
+
+.letterSpacing {
+  letter-spacing: 1.8px;
+
+}
+
+.CrimsonText {
+  font-family: 'Crimson Text', serif;
+}
+
+.BlackHanSans {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.fontSize {
+  font-size: 14px;
+}
+
+button {
+    width: 225px;
+    text-align: center;
+}
+
+#userInput {
+  width: 225px;
+}
+
+h3 {
+  margin-top: none;
+  padding-top: none;
+}
+
+
+/* .DoHyeon {
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.Gugi {
+  font-family: 'Gugi', cursive;
+}
+
+.Roboto {
+  font-family: 'Roboto';
+}
+
+.CantataOne {
+  font-family: 'Cantata One', serif;
+} */

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random quote with screenshot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+    <div class="main">
+        <h1>random quote with screenshot</h1>
+        <div class="content" id="quoteContainer">
+            <p id="quote">
+                <i class="fa-solid fa-quote-left"></i>
+                <span id="randomquote">I have no special talen. i am only passionately curious</span>
+                <i class="fa-solid fa-quote-right"></i>
+            </p>
+            <p id="author">- <span id="quoteAuthor">Albert Einstein</span></p>
+            <hr id="line">
+        </div>
+        <button id="screenshotButton">Screenshot</button>
+        <button id="generatequote">new quote</button>
+    </div>
+    <!-- Include html2canvas library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
