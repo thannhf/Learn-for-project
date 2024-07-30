@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emoji catcher game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-screen">
+        <h1>welcome to emoji catcher!</h1>
+        <button id="start-game">Start game</button>
+    </div>
+    <div class="game-screen" style="display:none;">
+        <div class="scores-container">
+            <div class="total-score">
+                <h2>your score:</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="time">
+                <h2>time left:</h2>
+                <h2 id="time-left">60</h2>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="grid">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+                <div class="square" id="10"></div>
+                <div class="square" id="11"></div>
+                <div class="square" id="12"></div>
+                <div class="square" id="13"></div>
+                <div class="square" id="14"></div>
+                <div class="square" id="15"></div>
+                <div class="square" id="16"></div>
+            </div>
+        </div>
+    </div>
+    <div class="game-over-screen" style="display: none;">
+        <h1>game over!</h1>
+        <h2>your final score is <span id="final-score">0</span></h2>
+        <button id="restart-game">Restart Game</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

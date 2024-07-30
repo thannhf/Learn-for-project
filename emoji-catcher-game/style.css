@@ -1,0 +1,90 @@
+body{
+    background:#2c3e50;
+    color:#ecf0f1;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.scores-container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-bottom:20px;
+}
+h1 {
+    font-size:40px;
+}
+.total-score, .time{
+    margin:0 10px;
+    text-align: center;
+    background:#34495e;
+    padding: 20px;
+    border-radius: 10px;
+}
+.total-score h2, .time h2 {
+    margin: 0;
+    color:#ecf0f1;
+}
+.grid-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin:auto;
+}
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #34495e;
+    border-radius: 10px;
+    padding: 10px;
+}
+.square{
+    height:100px;
+    width: 100px;
+    margin: 10px;
+    background:#1abc9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor:pointer;
+    transition:background 0.3s;
+}
+.square:hover{
+    background:#16a085;
+}
+.emoji{
+    background-image: url("https://i.guim.co.uk/img/media/a1b7129c950433c9919f5670c92ef83aa1c682d9/55_344_1971_1183/master/1971.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=88ba2531f114b9b58b9cb2d8e723abe1");
+    background-position: center;
+    background-size: cover;
+}
+.start-screen, .game-over-screen{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.start-screen h1, .game-over-screen h1 {
+    color:#ecf0f1;
+    margin-bottom:20px;
+}
+.start-screen button, .game-over-screen button{
+    padding:10px 20px;
+    background-color: #1abc9c;
+    border:none;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+.start-screen button:hover, .game-over-screen button:hover{
+    background-color: #16a085;
+}
