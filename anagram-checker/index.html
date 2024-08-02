@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram checker app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Anagram checker App</h1>
+            <div class="input-container">
+                <div class="input-group">
+                    <label for="firstInput">First Input:</label>
+                    <input type="text" id="firstInput" placeholder="enter a word...">
+                </div>
+                <div class="input-group">
+                    <label for="secondInput">Second Input:</label>
+                    <input type="text" id="secondInput" placeholder="enter a word...">
+                </div>
+                <button onclick="checkAnagram()">Check if anagram</button>
+            </div>
+            <div class="reslut" id="result"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
