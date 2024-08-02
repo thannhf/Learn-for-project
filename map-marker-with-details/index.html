@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map marker with details</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="content">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <a href="" target="_blank" id="modal-link">View More</a>
+            </div>
+            <div class="images" id="modal-images"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
