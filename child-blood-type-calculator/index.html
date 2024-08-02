@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Blood Type Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Child Blood type Calculator</h1>
+            <div class="mother-container">
+                <div class="input-group">
+                    <label for="mother-blood-type">Mother's blood type</label>
+                    <select id="mother-blood-type">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="mother-rh">mother's rh factor</label>
+                    <select id="mother-rh">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="father-container">
+                <div class="input-group">
+                    <label for="father-blood-type">father's blood type</label>
+                    <select id="father-blood-type">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="father-rh">Father's rh factor</label>
+                    <select id="father-rh">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+            </div>
+
+            <button onclick="calculateBloodType">Calculate</button>
+            <div class="results" id="results"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
