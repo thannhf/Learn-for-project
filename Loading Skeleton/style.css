@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, sans-serif;
+}
+.container{
+    width: 50%;
+    margin:50px auto;
+}
+.skeleton{
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+.skeleton-header {
+    width: 60%;
+    height: 20px;
+    background: #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.skeleton-paragraph {
+    width: 100%;
+    height: 10px;
+    background: #ccc;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+.content-loaded .skeleton{
+    display: none;
+}
+.content-loaded .real-content{
+    display: block;
+}

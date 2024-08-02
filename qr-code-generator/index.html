@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code generator with scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>QR Code Generator with Scanner</h1>
+            <p>This tool is used for generating QR codes based on your inputs, and can also read the QR code via camera or upload.</p>
+
+            <div class="options">
+                <button onclick="showGenerator()">Generate QR code</button>
+                <button onclick="showScanner()">Scan QR code</button>
+            </div>
+            <div class="generator-container" style="display: none;">
+                <input type="text" id="qr-input" placeholder="Enter text to generate QR code">
+                <button onclick="generateQRCode()">Generate QR code</button>
+                <canvas id="qrcode"></canvas>
+                <a onclick="back()">Back</a>
+            </div>
+            <div class="scanner-container" style="display: none;">
+                <button onclick="startScanner()">Start QR Scanner</button>
+                <div id="scanner-container" style="display: none;">
+                    <video id="video"></video>
+                </div>
+                <canvas id="captured-image" class="captured-image" style="display: none;"></canvas>
+                <p id="qr-result"></p>
+                <a onclick="back()">Back</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
