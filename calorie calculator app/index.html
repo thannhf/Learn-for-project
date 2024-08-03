@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calorie calculator app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+    <h1 style="color:#000">Calorie calculator app</h1>
+    <main class="cd__main">
+        <div class="calc-outer-wrap">
+            <div id="form-error" style="display:none;"></div>
+            <form class="calc-form" id="calc-form">
+                <div class="form-fields">
+                    <div class="field-outer">
+                        <label for="distance" class="top-label">Age:</label>
+                        <div class="field-items">
+                            <div class="field field-large">
+                                <input type="text" name="age" id="age" inputmode="numeric" pattern="[0-9]*">
+                            </div>
+                            <div class="field field-medium">
+                                <select name="gender">
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-outer">
+                        <label for="height" class="top-label">Height:</label>
+                        <div class="field-items">
+                            <div class="field">
+                                <input type="text" name="height-ft" id="height-ft" inputmode="numeric" pattern="[0-9]*">
+                                <label for="height-ft">feet</label>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="height-in" id="height-in" inputmode="numeric" pattern="[0-9]*">
+                                <label for="height-in">inches</label>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="height-cm" id="height-cm" inputmode="numeric" pattern="[0-9]*">
+                                <label for="height-cm">or centimeters</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-outer">
+                        <label for="weight" id="top-label">your weight:</label>
+                        <div class="field-items">
+                            <div class="field field-large">
+                                <input type="text" name="weight" id="weight" inputmode="numeric" pattern="[0-9]*">
+                            </div>
+                            <div class="field field-small">
+                                <select name="weight_unit">
+                                    <option value="lb">lb</option>
+                                    <option value="kg">kg</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap field-outer">
+                        <button class="form-submit">Calculate</button>
+                    </div>
+                </div>
+            </form>
+            <div id="results" style="display: none;"></div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
