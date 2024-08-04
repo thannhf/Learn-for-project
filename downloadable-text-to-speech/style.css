@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 5px 15px;
+    border-radius: 20px;
+}
+textarea {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    font-size: 18px;
+    outline:none;
+    margin:10px 0;
+}
+select {
+    width: 100%;
+    padding: 5px;
+    font-size: 17px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.buttons > button{
+    padding:5px 10px;
+    width: 180px;
+    font-size: 18px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.buttons :first-child{
+    background-color: #bbbbbb;
+    color:#ffff;
+}
+.buttons :last-child{
+    background-color: #4e4e4e;
+    color:#ffff;
+}
+.buttons > button:hover{
+    background-color: #d7d7d7;
+    color:#4e4e4e;
+}
