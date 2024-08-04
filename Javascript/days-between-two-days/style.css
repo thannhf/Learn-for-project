@@ -1,0 +1,53 @@
+body{
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right #ffecd2, #fcb69f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    background: white;
+    padding:20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+    color:#333;
+}
+.date-picker{
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    color:#666;
+}
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button{
+    padding:10px 20px;
+    background-color: #ff7b54;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+button:hover{
+    background-color: #ff5722;
+}
+.result{
+    margin-top:20px;
+    font-size: 1.2em;
+    color:#333;
+}
