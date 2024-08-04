@@ -1,0 +1,59 @@
+.cd__main{
+    margin:0 auto;
+    background: #f5f5f5 !important;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    min-height: 720px;
+}
+#s,
+#p{
+    min-height:  200px;
+    min-width: 200px;
+}
+#s{
+    height: 95vh;
+    width: 95vw;
+    max-height: 100vw;
+    max-width: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+#c{
+    height: 100%;
+    width: 100%;
+}
+input {
+    min-width: 100px;
+}
+.slice:hover > path,
+.slice:hover > text {
+    transition: 300ms;
+    transform: translate(-3.125%, -3.125%) scale(1.0625);
+}
+.winner > path{
+    transition: 300ms;
+    transform: translate(-12.5%, -12.5%) scale(1.25);
+}
+.winner > text {
+    transition: 300ms;
+    transform: translate(-10%, -10%) scale(1.2);
+}
+.spinner{
+    transition: 100ms;
+    cursor: pointer;
+}
+.spinner:hover{
+    transform: translate(-3.125%, -3.125%) scale(1.0625);
+}
+.spinner:active{
+    transition: 50ms;
+    transform: translate(-12.5%, -12.5%) scale(1.25);
+}
+.increaseNumbers{
+    position: fixed;
+    left: 0;
+    padding: 10px;
+}
