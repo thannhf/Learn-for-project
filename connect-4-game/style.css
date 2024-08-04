@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #416cea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper{
+    width: 34em;
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 0.5em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container{
+    margin:1.5em auto;
+    width: 34em;
+    border-radius: 0.6em;
+    overflow: hidden;
+    background-color: #416cea;
+}
+#information{
+    display:grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin-top:1em;
+}
+.player-wrappers{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.player1:before, .player2:before{
+    content: "";
+    display:inline-block;
+    width: 3.12em;
+    height: 3.12em;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+.player1:before{
+    background: radial-gradient(#fff04e 1.12em, #ffc400 1.25em);
+}
+.player2:before{
+    background:radial-gradient(#ff4747 1.12em, #c00303 1.25em);
+}
+#playerTurn{
+    margin:1em 0;
+    text-align: center;
+    font-weight: bold;
+    color:#333;
+}
+.startScreen{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(65, 108, 234, 0.9);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.startScreen h1{
+    color:#ffffff;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.startScreen button{
+    background-color: #ffffff;
+    font-size: 1.4em;
+    padding:1em 2em;
+    border:none;
+    outline:none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.grid-row{
+    margin:0 auto;
+    display:flex;
+}
+.grid-box{
+    width: 5em;
+    height: 5em;
+    display:grid;
+    place-items: center;
+    background: radial-gradient(white 1.37em, #416cea 1.43em);
+    cursor: pointer;
+}
+.hide{
+    display:none;
+}
+#message{
+    margin-bottom: 1em;
+    color:#ffffff;
+    font-size:1.2em;
+}
