@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filtering App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body style="background-color: #000;">
+    <main class="cd__main" style="background-color: #000;">
+        <h1 style="color:#fff; position:absolute;">Image Filtering App</h1>
+        <div class="wrapper">
+            <div class="image-wrapper">
+                <div class="filterButton">
+                    <button class="btn btn-secondary" data-filter="hue-rotate(140deg)">Hue</button>
+                    <button class="btn btn-secondary" data-filter="saturate(2)">Saturate</button>
+                    <button class="btn btn-secondary" data-filter="grayscale(100%)">Grayscale</button>
+                    <button class="btn btn-secondary" data-filter="invert(100%) hue-rotate(140deg)">Invert</button>
+                </div>
+                <img src="image.png" alt="">
+                <button class="reset btn btn-danger">Reset Filters</button>
+                <div class="toggleAdvanced">
+                    <i class="fa fa-angle-down">
+                        <span>show advanced settings</span>
+                    </i>
+                </div>
+                <div class="image-controls">
+                    <div>
+                        <label>Brightness</label>
+                        <input type="range" value="100" step="1" data-filter="brightness" data-scale="%" onchange="applyFilter()" min="0" max="200">
+                    </div>
+                    <div>
+                        <label>Contrast</label>
+                        <input type="range" value="100" step="1" data-filter="contrast" data-scale="%" onchange="applyFilter()" min="0" max="200">
+                    </div>
+                    <div>
+                        <label>Blur</label>
+                        <input type="range" value="0" step="1" data-filter="blur" data-scale="px" onchange="applyFilter()" min="0" max="100">
+                    </div>
+                    <div>
+                        <label>Grayscale</label>
+                        <input type="range" value="0" step="1" data-filter="grayscale" data-scale="%" onchange="applyFilter()" min="0" max="100">
+                    </div>
+                    <div>
+                        <label>Hue Rotate</label>
+                        <input type="range" value="0" step="1" data-filter="hue-rotate" data-scale="deg" onchange="applyFilter()" min="0" max="360">
+                    </div>
+                    <div>
+                        <label>Invert</label>
+                        <input type="range" value="0" step="1" data-filter="invert" data-scale="%" onchange="applyFilter()" min="0" max="100">
+                    </div>
+                    <div>
+                        <label>Opacity</label>
+                        <input type="range" value="100" step="1" data-filter="opacity" data-scale="%" onchange="applyFilter()" min="0" max="100">
+                    </div>
+                    <div>
+                        <label>Saturate</label>
+                        <input type="range" value="1" step="1" data-filter="saturate" data-scale="" onchange="applyFilter()" min="1" max="100">
+                    </div>
+                    <div>
+                        <label>Sepia</label>
+                        <input type="range" value="0" step="1" data-filter="sepia" data-scale="%" onchange="applyFilter()" min="0" max="100">
+                    </div>
+                </div>
+                <div class="filterSummary"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
