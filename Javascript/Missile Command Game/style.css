@@ -1,0 +1,75 @@
+body{
+	background-color:#000;
+}
+
+header {
+    background-color: #36454F;
+    margin: 0 0 30px 0;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 2.6em;
+    margin: 0;
+	color:green;
+}
+
+
+.directions {
+    width: 250px;
+    padding: 10px 0 10px 10px;
+    background-color: #d7d7d7;
+	background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+	color:#fff;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-left:30px;
+	font-size: 0.8em;
+	float:left;
+}
+
+.canvas {
+    outline: 4px solid #7C8DEB;
+    background-color: black;
+    display: block;
+	float:left;
+	margin-left:80px;
+}
+
+.game-on {
+    background-color: #00F504;
+}
+
+.panel {
+    width: 200px;
+    margin: 0 60px;
+    border-radius: 12px;
+    border: 2px solid black;
+    padding: 12px 0;
+    background-color: #d7d7d7;
+	background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+	color:#fff;
+	float:left;
+}
+
+.panel .start-game {
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    font-family: orbitron;
+    padding: 5px;
+}
+
+.panel .stats {
+    display: block;
+    width: 140px;
+    margin: 10px auto;
+    font-family: orbitron;
+    font-weight: bold;
+}
+
+.indent {
+	padding-left: 24px;
+}
