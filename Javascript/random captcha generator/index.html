@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random captcha generator app</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <section>
+        <div class="captch_area">
+            <header>
+                <h3>Random Captcha generator App</h3>
+            </header>
+            <div class="captch_box">
+                <div class="captch">
+                    <img src="img/captcha-bg.png" alt="captch" class="img-fluid">
+                    <span id="captcha_text"></span>
+                </div>
+                <div class="captch_btn">
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+            </div>
+            <form method="post" id="captch_form">
+                <div class="input">
+                    <input type="text" name="captch_field" placeholder="enter here..." id="captcha_field" required autocomplete="off">
+                    <button type="submit" class="check_btn">Check</button>
+                </div>
+                <span id="msg"></span>
+            </form>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
