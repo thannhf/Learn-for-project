@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <section class="hero">
+        <h1>todo app</h1>
+        <form autocomplete="off" id="form">
+            <div class="form-group">
+                <input type="text" placeholder="enter your list here..." id="todoInput" class="form-control">
+                <button class="btn btn-primary" id="addBtn">Add list</button>
+            </div>
+        </form>
+        <div class="todo-list-wrapper">
+            <ul class="todo-list-group" id="listGroup"></ul>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
