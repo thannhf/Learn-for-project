@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper{
+    background-color: #ffffff;
+    height: 37.5em;
+    width: 37.5em;
+    position: relative;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.simon{
+    height: 31.25em;
+    width: 31.25em;
+    background-color: #101010;
+    border-radius: 50%;
+    position: relative;
+}
+.color-part{
+    height: 13.12em;
+    width: 13.12em;
+    position: absolute;
+    cursor: pointer;
+}
+.color1{
+    background-color: #027802;
+    border-radius: 13em 0 0 0;
+    top:1.87em;
+    left:1.87em;
+}
+.color2 {
+    background-color: #950303;
+    border-radius: 0 13em 0 0;
+    top: 1.87em;
+    right: 1.87em;
+}
+.color3 {
+    background-color: #01018a;
+    bottom:1.87em;
+    right: 1.87em;
+    border-radius: 0 0 13em 0;
+}
+.color4{
+    background-color: #919102;
+    bottom: 1.87em;
+    left: 1.87em;
+    border-radius: 0 0 0 13em;
+}
+.simon:before{
+    position: absolute;
+    content: "";
+    background-color: #101010;
+    height: 13.75em;
+    width: 13.75em;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+#title{
+    font-size: 3.5em;
+    color:#ffffff;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+#count {
+    font-size: 2.5em;
+    color:#ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    text-align: center;
+    font-weight: bold;
+}
+.hide{
+    display: none;
+}
+.container{
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container button{
+    background-color: #ffffff;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    padding:1em 2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.container button:hover{
+    background-color: #dcdcdc;
+}
+.container p{
+    font-size: 2em;
+    color:#ffffff;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.container span{
+    font-weight: 600;
+}
+@media screen and (max-width:600px) {
+    body {
+        font-size: 10px;
+    }
+    .wrapper {
+        height: 35em;
+        width: 35em;
+    }
+}
