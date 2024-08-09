@@ -1,2 +1,7 @@
-# project-javascript-php-c/c++-python
-Những dự án trên đây được sưu tầm với mục đích học hỏi và thực hành bởi tác giả
+# Project
+*** javascript ***<br>
+*** php ***<br>
+*** c ***<br>
+*** c++ ***<br>
+*** python ***<br>
+Những dự án trên đây được sưu tầm với mục đích học hỏi và thực hành
